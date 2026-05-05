@@ -1,4 +1,4 @@
-# 🚗 Getaround — Analyse des Retards & Optimisation des Prix
+# 🚗 Getaround Analyse des Retards & Optimisation des Prix
 
 > *Aider Getaround à définir la politique de délai minimum entre deux locations et suggérer des prix optimaux aux propriétaires grâce au Machine Learning*
 
@@ -135,7 +135,7 @@ streamlit run app/streamlit_app.py
 
 ---
 
-## 🌐 API — Endpoint `/predict`
+## 🌐 API Endpoint `/predict`
 
 ```bash
 curl -X POST 'https://your-url/predict' \
@@ -186,8 +186,6 @@ Dashboard Streamlit (déploiement sur Hugging Face)
 | | Nom | Rôle |
 |---|---|---|
 | 🧑‍💻 | **Martial BAYOM** | Data Science |
-
-Projet réalisé dans le cadre de la **certification Jedha AI School** (RNCP Niveau 6)
 
 ---
 
