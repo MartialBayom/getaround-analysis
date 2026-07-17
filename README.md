@@ -1,4 +1,4 @@
-# 🚗 Getaround Analyse des Retards & Optimisation des Prix
+# Getaround Analyse des Retards & Optimisation des Prix
 
 > *Aider Getaround à définir la politique de délai minimum entre deux locations et suggérer des prix optimaux aux propriétaires grâce au Machine Learning*
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 🎯 Objectif
+## Objectif
 
 **Comment réduire les conflits liés aux retards sans pénaliser les revenus des propriétaires ?**
 
@@ -24,16 +24,16 @@ Ce projet analyse **21 310 locations** Getaround pour recommander :
 
 ---
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
-### 📊 Analyse des Retards (Dashboard)
+### Analyse des Retards (Dashboard)
 
 - Visualisation de la distribution des retards par type de check-in (Mobile vs Connect)
 - Simulation interactive du seuil (30 à 720 min) et de la portée
 - Courbe coût/bénéfice : locations bloquées vs cas problématiques résolus
 - Recommandation data-driven pour le chef de produit
 
-### 💰 Optimisation des Prix (API ML)
+### Optimisation des Prix (API ML)
 
 - Endpoint `/predict` : suggère un prix journalier basé sur les caractéristiques du véhicule
 - Endpoint `/docs` : documentation interactive de l'API
@@ -41,7 +41,7 @@ Ce projet analyse **21 310 locations** Getaround pour recommander :
 
 ---
 
-## 📊 Résultats
+## Résultats
 
 ### Analyse des Retards
 
@@ -60,12 +60,12 @@ Ce projet analyse **21 310 locations** Getaround pour recommander :
 | Modèle | MAE (€) | RMSE (€) | R² |
 |---|---|---|---|
 | Ridge Regression | ~18€ | ~24€ | ~0.47 |
-| **Random Forest ⭐** | **~12€** | **~17€** | **~0.74** |
+| **Random Forest ** | **~12€** | **~17€** | **~0.74** |
 | Gradient Boosting | ~13€ | ~18€ | ~0.72 |
 
 ---
 
-## 🗂️ Structure du projet
+## Structure du projet
 
 ```
 getaround/
@@ -86,7 +86,7 @@ getaround/
 
 ---
 
-## 🧠 Features utilisées pour le pricing
+## Features utilisées pour le pricing
 
 | Feature | Description |
 |---|---|
@@ -105,7 +105,7 @@ getaround/
 
 ---
 
-## 📈 Analyse exploratoire — Insights clés
+## Analyse exploratoire — Insights clés
 
 - **57%** des conducteurs rendent la voiture en retard (mobile) vs **37%** (connect)
 - Les voitures **Connect** ont une médiane de retard de **-9 min** → rendues en avance en moyenne
@@ -115,7 +115,7 @@ getaround/
 
 ---
 
-## ⚙️ Installation locale
+## Installation locale
 
 ```bash
 # Cloner le repo
@@ -135,7 +135,7 @@ streamlit run app/streamlit_app.py
 
 ---
 
-## 🌐 API Endpoint `/predict`
+## API Endpoint `/predict`
 
 ```bash
 curl -X POST 'https://your-url/predict' \
@@ -156,7 +156,7 @@ print(response.json())
 
 ---
 
-## 🏗️ Infrastructure
+## Infrastructure
 
 ```
 Jedha (données brutes)
@@ -172,7 +172,7 @@ Dashboard Streamlit (déploiement sur Hugging Face)
 
 ---
 
-## 🔭 What's next ?
+## What's next ?
 
 - [ ] **Dashboard interactif complet** — simulation temps réel du seuil par le chef de produit
 - [ ] **XGBoost / LightGBM** — tester des modèles plus performants pour le pricing
@@ -181,15 +181,15 @@ Dashboard Streamlit (déploiement sur Hugging Face)
 
 ---
 
-## 👤 Auteur
+## Auteur
 
 | | Nom | Rôle |
 |---|---|---|
-| 🧑‍💻 | **Martial BAYOM** | Data Science |
+|  | **Martial BAYOM** | Data Science |
 
 ---
 
-## 📂 Sources
+## Sources
 
 | Dataset | Source |
 |---|---|
