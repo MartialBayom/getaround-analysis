@@ -105,7 +105,7 @@ getaround/
 
 ---
 
-## Analyse exploratoire — Insights clés
+## Analyse exploratoire - Insights clés
 
 - **57%** des conducteurs rendent la voiture en retard (mobile) vs **37%** (connect)
 - Les voitures **Connect** ont une médiane de retard de **-9 min** → rendues en avance en moyenne
@@ -174,10 +174,10 @@ Dashboard Streamlit (déploiement sur Hugging Face)
 
 ## What's next ?
 
-- [ ] **Dashboard interactif complet** — simulation temps réel du seuil par le chef de produit
-- [ ] **XGBoost / LightGBM** — tester des modèles plus performants pour le pricing
-- [ ] **Feature engineering** — ajouter l'année du véhicule, le nombre de locations précédentes
-- [ ] **Monitoring** — détecter le data drift sur les prédictions de prix en production
+- [ ] **Dashboard interactif complet** - simulation temps réel du seuil par le chef de produit
+- [ ] **XGBoost / LightGBM** - tester des modèles plus performants pour le pricing
+- [ ] **Feature engineering** - ajouter l'année du véhicule, le nombre de locations précédentes
+- [ ] **Monitoring** - détecter le data drift sur les prédictions de prix en production
 
 ---
 
