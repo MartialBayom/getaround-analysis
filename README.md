@@ -2,7 +2,7 @@
 
 > *Aider Getaround à définir la politique de délai minimum entre deux locations et suggérer des prix optimaux aux propriétaires grâce au Machine Learning*
 
-[![Streamlit App](https://img.shields.io/badge/App-Streamlit-FF4B4B?logo=streamlit)](https://huggingface.co/spaces/MartialBayom/getaround-analysis)
+[![Streamlit App](https://img.shields.io/badge/App-Streamlit-FF4B4B?logo=streamlit)](https://getaround-analysis-martialbayom.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python)](https://www.python.org/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikit-learn)](https://scikit-learn.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
@@ -19,8 +19,8 @@ Ce projet analyse **21 310 locations** Getaround pour recommander :
 2. Une **portée** (toutes les voitures ou uniquement les voitures Connect)
 3. Un **modèle de pricing ML** pour suggérer des prix optimaux aux propriétaires
 
-🔗 **Dashboard en ligne :** [huggingface.co/spaces/MartialBayom/getaround-analysis](https://huggingface.co/spaces/MartialBayom/getaround-analysis)  
-🔗 **API en ligne :** [huggingface.co/spaces/MartialBayom/getaround-api](https://huggingface.co/spaces/MartialBayom/getaround-api)
+🔗 **Dashboard en ligne :** [getaround-analysis-martialbayom.streamlit.app](https://getaround-analysis-martialbayom.streamlit.app/)  
+🔗 **API en ligne :** [getaround-api-efhe.onrender.com/docs](https://getaround-api-efhe.onrender.com/docs)
 
 ---
 
@@ -138,7 +138,7 @@ streamlit run app/streamlit_app.py
 ## API Endpoint `/predict`
 
 ```bash
-curl -X POST 'https://your-url/predict' \
+curl -X POST 'https://getaround-api-efhe.onrender.com/predict' \
      -H 'Content-Type: application/json' \
      -d '{"input": [[50000, 120, "Renault", "diesel", "black", "sedan", true, true, true, false, true, false, false]]}'
 ```
@@ -146,7 +146,7 @@ curl -X POST 'https://your-url/predict' \
 ```python
 import requests
 
-response = requests.post("https://your-url/predict", json={
+response = requests.post("https://getaround-api-efhe.onrender.com/predict", json={
     "input": [[50000, 120, "Renault", "diesel", "black", "sedan",
                True, True, True, False, True, False, False]]
 })
