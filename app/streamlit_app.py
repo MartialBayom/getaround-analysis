@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import pandas as pd
 import numpy as np
 import plotly.express as px
@@ -6,10 +8,15 @@ import streamlit as st
 
 st.set_page_config(page_title="Getaround — Analyse des Retards", page_icon="🚗", layout="wide")
 
+# Chemin robuste vers le fichier de donnees, independant du dossier de travail
+# (Streamlit Cloud lance l'app depuis la racine du repo, mais on veut que ca marche
+# aussi en local depuis le dossier app/)
+DATA_PATH = Path(__file__).resolve().parent.parent / "data" / "get_around_delay_analysis.xlsx"
+
 
 @st.cache_data
 def load_data():
-    return pd.read_excel("../data/get_around_delay_analysis.xlsx")
+    return pd.read_excel(DATA_PATH)
 
 
 @st.cache_data
